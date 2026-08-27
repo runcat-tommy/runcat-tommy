@@ -59,9 +59,9 @@ drwxr-xr-x  me  me  ⚠️日期   dsh-plugin-runcat-inventory    逃猫-插件�
 
 ```text
 $ cat ~/contact.md
-Email   : xujingyu123456@gmail.com
+Email   : xujingyu123456@gmail.com yeyu1899@163.com 99148430@qq.com
 GitHub  : github.com/runcat-tommy
-Blog    : ⚠️ 选填，没有就删掉这行
+Blog    : www.fastformat.cn
 ```
 
 ---
