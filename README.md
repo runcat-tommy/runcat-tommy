@@ -1,27 +1,19 @@
-<!--
-  ⚠️ 使用说明
-  1. 在 GitHub 上创建一个与你用户名完全同名（大小写一致）的公开仓库
-  2. 把本文件内容放进该仓库的 README.md
-  3. 所有标 ⚠️ 的地方替换成你自己的信息
-  4. 提交后打开 github.com/你的用户名 即可看到效果
--->
-
 <div align="center">
 
 ```
   ____ ___  ____  _____ ____  
  / ___/ _ \|  _ \| ____|  _ \ 
-| |  | | | | | | |  _| | |_) |
+| |  | | | | | |  _| | |_) |
 | |__| |_| | |_| | |___|  _ < 
  \____\___/|____/|_____|_| \_\
 ```
 
 `./dev --whoami`
 
-**兴趣驱动的开源爱好者** · Backend · Data · AI
+**兴趣驱动的开源爱好者** · DeepSeek Harness 插件开发 · Backend · Data · AI
 
-*中文：一个把代码当爱好的普通人，正在后端与数据的世界里慢慢摸索。*
-*EN: An open-source hobbyist exploring backend & data science, one commit at a time.*
+*中文：一个把代码当爱好的普通人，正在 DeepSeek Harness 生态里写插件。*
+*EN: An open-source hobbyist building plugins for the DeepSeek Harness ecosystem.*
 
 </div>
 
@@ -32,28 +24,34 @@
 ```text
 $ whoami
 > 开源爱好者 / Open-source hobbyist
-> 后端 · 数据 · AI  (Backend · Data · ML)
-> 状态: 学习中 / still learning
+> DeepSeek Harness (dsh) 插件作者 / DSH plugin author
+> 后端 · 数据 · AI  (Backend · Data · AI)
+> 状态: 已发布 6 个 DSH 插件到 npm / 6 DSH plugins published on npm
 ```
 
 ## 🧰 stack.txt
 
 ```text
 $ cat ~/stack.txt
-├── Backend   : Python · Java · Go · SQL
-├── Data      : Python · SQL
-└── AI/ML     : PyTorch
+├── 主力 Shipped   : JavaScript · TypeScript · Node.js · React
+├── 平台 Platform  : DeepSeek Harness (dsh) · cordis · npm
+├── 界面 UI        : Web GUI 插件 · 主题与样式 · 中英双语 i18n
+└── 背景 Background: Python · Java · SQL  (后端 / 数据方向)
 ```
 
 ## 📂 ls -la ~/projects
 
 ```text
-$ ls -la ~/projects
-drwxr-xr-x  me  me  ⚠️日期   dsh-view-manager               ⚠️一句话介绍它
-drwxr-xr-x  me  me  ⚠️日期   dsh-plugin-runcat-inventory    逃猫-插件总览：DSH 插件列表（表格视图、状态过滤、启停）
+$ ls -la ~/projects      # 全部为 DeepSeek Harness 插件，均已发布至 npm
+drwxr-xr-x  me  me  2026-09  dsh-unitverse               单位换算：10 大类 80+ 单位，convert 工具 + Web 视图，中英双语
+drwxr-xr-x  me  me  2026-09  dsh-panda-calendar          熊猫日历：农历/干支/节气、法定节假日调休、多城市天气、时间戳转换
+drwxr-xr-x  me  me  2026-09  dsh-chinese-poetry          中国古典诗词：搜索筛选、飞花令、每日一诗、收藏、AI 讲解
+drwxr-xr-x  me  me  2026-08  dsh-theme-manager           两级主题管理：40 款内置样式（水墨、浮世绘、苏州园林、赛博朋克、国旗…）
+drwxr-xr-x  me  me  2026-08  dsh-view-manager            视图标签管理：启用/隐藏、排序、重命名（对话 / 轨迹）
+drwxr-xr-x  me  me  2026-08  dsh-plugin-runcat-inventory 逃咪-插件总览：表格视图、状态过滤、热启停、配置查看与复制
 ```
 
-> ⚠️ 把两个 `⚠️日期` 换成大概的创建时间（如 2025-06）；`dsh-view-manager` 的一句话介绍等你补充，写不出来就先留空行。
+> 全部仓库见 [github.com/runcat-tommy?tab=repositories](https://github.com/runcat-tommy?tab=repositories)
 
 ## 📡 contact
 
@@ -70,7 +68,7 @@ Blog    : www.fastformat.cn
 
 *Thanks for visiting! 感谢来访 🖖*
 
-![visitors](https://komarev.com/ghpvc/?username=runcat-tommy&color=green) <!-- 可选的访客计数，不喜欢就删掉 -->
+![visitors](https://komarev.com/ghpvc/?username=runcat-tommy&color=green)
 
 </div>
 
