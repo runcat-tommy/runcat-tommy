@@ -1,11 +1,12 @@
 <div align="center">
 
 ```
-  ____  ____  _   _ 
- / __ \/ ___|| | | |
-| |  | \___ \| |_| |
-| |__| |___) |  _  |
- \____/|____/|_| |_|
+runcat@dsh:~$ whoami
+ /\ /\
+( -.- )
+ > ^ <
+> DSH plugin author
+runcat@dsh:~$ _
 ```
 
 `./dev --whoami`
