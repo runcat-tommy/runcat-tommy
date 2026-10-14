@@ -26,7 +26,7 @@ $ whoami
 > 开源爱好者 / Open-source hobbyist
 > DeepSeek Harness (dsh) 插件作者 / DSH plugin author
 > 后端 · 数据 · AI  (Backend · Data · AI)
-> 状态: 已发布 6 个 DSH 插件到 npm / 6 DSH plugins published on npm
+> 状态: 自研 10 个 DSH 插件，其中 9 个已发布到 npm / 10 DSH plugins, 9 published on npm
 ```
 
 ## 🧰 stack.txt
@@ -35,21 +35,78 @@ $ whoami
 $ cat ~/stack.txt
 ├── 主力 Shipped   : JavaScript · TypeScript · Node.js · React
 ├── 平台 Platform  : DeepSeek Harness (dsh) · cordis · npm
-├── 界面 UI        : Web GUI 插件 · 主题与样式 · 中英双语 i18n
+├── 界面 UI        : Web GUI 插件 · 会话视图标签 · 设置页 · 主题与样式 · 中英双语 i18n
 └── 背景 Background: Python · Java · SQL  (后端 / 数据方向)
 ```
 
 ## 📂 ls -la ~/projects
 
 ```text
-$ ls -la ~/projects      # 全部为 DeepSeek Harness 插件，均已发布至 npm
-drwxr-xr-x  me  me  2026-09  dsh-unitverse               单位换算：10 大类 80+ 单位，convert 工具 + Web 视图，中英双语
-drwxr-xr-x  me  me  2026-09  dsh-panda-calendar          熊猫日历：农历/干支/节气、法定节假日调休、多城市天气、时间戳转换
-drwxr-xr-x  me  me  2026-09  dsh-chinese-poetry          中国古典诗词：搜索筛选、飞花令、每日一诗、收藏、AI 讲解
-drwxr-xr-x  me  me  2026-08  dsh-theme-manager           两级主题管理：40 款内置样式（水墨、浮世绘、苏州园林、赛博朋克、国旗…）
-drwxr-xr-x  me  me  2026-08  dsh-view-manager            视图标签管理：启用/隐藏、排序、重命名（对话 / 轨迹）
-drwxr-xr-x  me  me  2026-08  dsh-plugin-runcat-inventory 逃咪-插件总览：表格视图、状态过滤、热启停、配置查看与复制
+$ ls -la ~/projects      # 自研 DSH 插件，全部开源（MIT）
 ```
+
+### 🖥️ 会话视图标签（会话页头新增一页）
+
+| 插件 | 说明 |
+|---|---|
+| **`dsh-unitverse`** | 单位换算：长度 / 面积 / 体积 / 时间 / 角度 / 速度 / 温度 / 压力 / 热量 / 功率 十大类，`convert` 工具 + Web 视图，中英单位名与温差 Δ 双模式 |
+| **`dsh-panda-calendar`** | 熊猫日历：公历 / 农历 / 干支 / 生肖 / 节气 / 节日、法定节假日与调休、多城市天气、时间戳转换、历史上的今天 |
+| **`dsh-chinese-poetry`** | 中国古典诗词：37 万首搜索筛选、飞花令、每日一诗、收藏、AI 讲解 |
+
+> 这三个都是**免 token** 的数据型标签页：不建后端、不申请 Key，AI 解释直接走你自己的 dsh 会话。
+
+### 🎨 界面与外观
+
+| 插件 | 说明 |
+|---|---|
+| **`dsh-theme-manager`** | 两级主题管理：先选文化 / 场景，再选风格，58 款内置样式（中国·水墨、日本·浮世绘、开发者·Catppuccin、国旗…），点「使用」实时生效 |
+| **`dsh-view-manager`** | 视图标签管理：启用 / 隐藏、排序、重命名（对话 / 轨迹 / 任意视图插件） |
+
+### ⚙️ 设置页（与「插件」同级）
+
+| 插件 | 说明 |
+|---|---|
+| **`dsh-plugin-runcat-inventory`** | 逃咪-插件总览：表格视图、状态过滤、启用停用热生效、卸载、更新提醒、配置查看与复制 |
+| **`dsh-mcp-mini-manager`** | MCP 极简管理：列出当前 DSH 实际装载的每个 MCP 服务器、简介与运行状态，并可逐个移除（写入可恢复的停用补丁） |
+| **`dsh-skill-mini-manager`** | skill 极简管理：列出全部已装 skill 的简介、来源与体积，可逐个移除（可恢复回收站） |
+
+### 🧰 专项工具
+
+| 插件 | 说明 |
+|---|---|
+| **`dsh-windows-c-cleanup`** | Windows C 盘清理：把清理拆成一条**可审计流水线**——扫描 → 五级分级（可安全删除 / 谨慎删除 / 建议迁移 / 保护名单 / 长期防护）→ 可视化报告 → 用户确认 → 分层执行与迁移 |
+| **`dsh-netscope`** | 网络全景观测仪：只读、零依赖、零权限的本机网络观测仪，为每条结论标注**可信度与来源**并与历史基线比对。`⏸ 已暂停（2026-09）`，代码完整可用、未发布 npm |
+
+### 📦 一键安装
+
+```sh
+# 全部已发布到 npm 的插件（安装后重启 DSH Web）
+dsh plugin --profile web add dsh-unitverse
+dsh plugin --profile web add dsh-panda-calendar
+dsh plugin --profile web add dsh-chinese-poetry
+dsh plugin --profile web add dsh-theme-manager
+dsh plugin --profile web add dsh-view-manager
+dsh plugin --profile web add dsh-plugin-runcat-inventory
+dsh plugin --profile web add dsh-mcp-mini-manager
+dsh plugin --profile web add dsh-skill-mini-manager
+dsh plugin --profile web add dsh-windows-c-cleanup
+
+# dsh-netscope 暂未发布 npm，从源码安装：git clone 后 dsh plugin --profile web add ./dsh-netscope
+```
+
+## 📚 awesome 清单（fork 维护）
+
+```text
+$ ls -la ~/awesome
+```
+
+| 清单 | 内容 | 上游 |
+|---|---|---|
+| **`awesome-deepseek-harness`** | DSH 生态精选索引：插件、工具与基础设施，按 20+ 分类整理 | fork 自 `0xsline/awesome-deepseek-harness` |
+| **`awesome-dsh-plugin`** | 社区插件清单：官方站 [awesome-dsh-plugin.com](https://awesome-dsh-plugin.com)、插件计数徽章、评论讨论区，并推荐内置市场插件 `dsh-market` | fork 自 `awesome-dsh-plugin/awesome-dsh-plugin` |
+| **`awesome-deepseek-harness-plugins`** | 社区插件目录：收录 1.3 万+ 插件，配自动收集与格式校验流水线、公开查询 API | fork 自 `imsai-sh/awesome-deepseek-harness-plugins` |
+
+> 这三个是上游**社区清单仓库的 fork**，用于跟踪与取用生态目录；原创代码在上面「自研插件」里。
 
 > 全部仓库见 [github.com/runcat-tommy?tab=repositories](https://github.com/runcat-tommy?tab=repositories)
 
