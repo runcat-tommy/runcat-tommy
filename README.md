@@ -5,7 +5,7 @@ runcat@dsh:~$ whoami
  /\ /\
 ( -.- )
  > ^ <
-> DSH plugin author
+> coder & pytorcher
 runcat@dsh:~$ _
 ```
 
