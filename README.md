@@ -11,7 +11,7 @@ runcat@dsh:~$ _
 
 `./dev --whoami`
 
-**兴趣驱动的开源爱好者** · DeepSeek Harness 插件开发 · Backend · Data · AI
+**兴趣驱动的开源爱好者** · DeepSeek Harness 插件开发 · PyTorch · Backend · Data
 
 *中文：一个把代码当爱好的普通人，正在 DeepSeek Harness 生态里写插件。*
 *EN: An open-source hobbyist building plugins for the DeepSeek Harness ecosystem.*
@@ -27,7 +27,7 @@ $ whoami
 > 开源爱好者 / Open-source hobbyist
 > DeepSeek Harness (dsh) 插件作者 / DSH plugin author
 > 后端 · 数据 · AI  (Backend · Data · AI)
-> 状态: 自研 10 个 DSH 插件，其中 9 个已发布到 npm / 10 DSH plugins, 9 published on npm
+> 状态: 自研 10 个 DSH 插件（9 个已发布 npm）+ 1 个 PyTorch 项目 / 10 DSH plugins (9 on npm) + 1 PyTorch project
 ```
 
 ## 🧰 stack.txt
@@ -37,20 +37,21 @@ $ cat ~/stack.txt
 ├── 主力 Shipped   : JavaScript · TypeScript · Node.js · React
 ├── 平台 Platform  : DeepSeek Harness (dsh) · cordis · npm
 ├── 界面 UI        : Web GUI 插件 · 会话视图标签 · 设置页 · 主题与样式 · 中英双语 i18n
+├── AI / ML        : PyTorch · MobileNetV3 · MTCNN · MediaPipe · Gradio  (纯 CPU 推理)
 └── 背景 Background: Python · Java · SQL  (后端 / 数据方向)
 ```
 
 ## 📂 ls -la ~/projects
 
 ```text
-$ ls -la ~/projects      # 自研 DSH 插件，全部开源（MIT）
+$ ls -la ~/projects      # 自研项目，全部开源（MIT）
 ```
 
 ### 🖥️ 会话视图标签（会话页头新增一页）
 
 | 插件 | 说明 |
 |---|---|
-| **`dsh-unitverse`** | 单位换算：长度 / 面积 / 体积 / 时间 / 角度 / 速度 / 温度 / 压力 / 热量 / 功率 十大类，`convert` 工具 + Web 视图，中英单位名与温差 Δ 双模式 |
+| **`dsh-unitverse`** | 单位换算：长度 / 面积 / 体积 / 时间 / 角度 / 速度 / 温度 / 压力 / 热量 / 功率 十大类 **80+ 单位**，`convert` 工具 + Web 视图，中英单位名与温差 Δ 双模式 |
 | **`dsh-panda-calendar`** | 熊猫日历：公历 / 农历 / 干支 / 生肖 / 节气 / 节日、法定节假日与调休、多城市天气、时间戳转换、历史上的今天 |
 | **`dsh-chinese-poetry`** | 中国古典诗词：37 万首搜索筛选、飞花令、每日一诗、收藏、AI 讲解 |
 
@@ -75,8 +76,16 @@ $ ls -la ~/projects      # 自研 DSH 插件，全部开源（MIT）
 
 | 插件 | 说明 |
 |---|---|
-| **`dsh-windows-c-cleanup`** | Windows C 盘清理：把清理拆成一条**可审计流水线**——扫描 → 五级分级（可安全删除 / 谨慎删除 / 建议迁移 / 保护名单 / 长期防护）→ 可视化报告 → 用户确认 → 分层执行与迁移 |
+| **`dsh-windows-c-cleanup`** | Windows C 盘清理：把清理拆成一条**可审计流水线**——扫描 → 五级分级（可安全删除 / 谨慎删除 / 建议迁移 / 保护名单 / 长期防护）→ 可视化报告 → 用户确认 → 分层执行、暂存区与迁移（需管理员权限的项走 UAC 提权）|
 | **`dsh-netscope`** | 网络全景观测仪：只读、零依赖、零权限的本机网络观测仪，为每条结论标注**可信度与来源**并与历史基线比对。`⏸ 已暂停（2026-09）`，代码完整可用、未发布 npm |
+
+### 🤖 PyTorch / AI
+
+| 项目 | 说明 |
+|---|---|
+| **`pytorch_face_scoring`** | 人脸颜值趣味评分：MobileNetV3 + MTCNN 回归总分（SCUT-FBP5500 训练、5500 张参考分布做分位校准）、MediaPipe FaceMesh 478 关键点的几何美学引擎出五维分项、瞳色/眼神光/肤色冷暖/微笑弧度等趣味检测、气质标签与幽默文案，输出 HTML 报告 + 五维雷达图（Gradio 展示）。纯 CPU 推理，单张约 0.25 秒 |
+
+> 非 dsh 插件：独立的 Python / PyTorch 项目，本地推理、无需 GPU。
 
 ### 📦 一键安装
 
