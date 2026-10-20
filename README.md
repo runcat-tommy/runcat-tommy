@@ -25,7 +25,7 @@ runcat@dsh:~$ _
 ```text
 $ whoami
 > 开源爱好者 / Open-source hobbyist
-> DeepSeek Harness (dsh) 插件作者 / DSH plugin author
+> coder & pytorcher / DSH 插件作者
 > 后端 · 数据 · AI  (Backend · Data · AI)
 > 状态: 自研 10 个 DSH 插件（9 个已发布 npm）+ 1 个 PyTorch 项目 / 10 DSH plugins (9 on npm) + 1 PyTorch project
 ```
